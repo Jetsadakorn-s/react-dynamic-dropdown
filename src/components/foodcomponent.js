@@ -1,8 +1,9 @@
-const FoodComponent = () =>{
+const FoodComponent = ({foodName,image_url}) =>{
     return(
-        <h1>
-            FoodComponent
-        </h1>
+        <div className="single-food">
+            <h2>{foodName}</h2>
+            <img src={image_url} alt={image_url}/>
+        </div>
     )
 }
 export default FoodComponent
